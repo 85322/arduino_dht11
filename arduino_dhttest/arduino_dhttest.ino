@@ -1,29 +1,57 @@
 //Libraries
-#include <dht.h>
-dht DHT;
-//Constants
-#define DHT11_PIN 2     // DHT 22  (AM2302) - what pin we're connected to
+#include <DHT.h>
 
+//Constants
+#define DHT11_PIN 2   
+#define DHTTYPE DHT11
+
+#define RELAIS_PIN 3
+
+DHT dht(DHT11_PIN, DHTTYPE);
 //Variables
-float hum;  //Stores humidity value
+float peter;  //Stores humidity value
 float temp; //Stores temperature value
+float relaisSwitchOnThreshhold=13.00;
 
 void setup()
 {
     Serial.begin(9600);
+    dht.begin();
+    pinMode(RELAIS_PIN, OUTPUT);
+    digitalWrite(RELAIS_PIN, HIGH);
 }
 
 void loop()
 {
-    int chk = DHT.read11(DHT11_PIN);
     //Read data and store it to variables hum and temp
-    hum = DHT.humidity;
-    temp= DHT.temperature;
+    peter = dht.readHumidity();
+    temp= dht.readTemperature();
     //Print temp and humidity values to serial monitor
     Serial.print("Humidity: ");
-    Serial.print(hum);
+    Serial.print(peter);
     Serial.print(" %, Temp: ");
     Serial.print(temp);
-    Serial.println(" Celsius");
+    Serial.println(" Celsius"); 
+    switchRelaisBasedOnSensorHumidity(peter);  
     delay(2000); //Delay 2 sec.
 }
+
+void switchRelaisBasedOnSensorHumidity(float hum){
+       if (isHumidityAboveThreshhold(hum)){
+        digitalWrite(RELAIS_PIN, LOW);
+        Serial.println(" Switching Relay");       
+    } else {
+        digitalWrite(RELAIS_PIN, HIGH);
+        Serial.println(" Switching Relay Off");
+    }
+}
+
+bool isHumidityAboveThreshhold(float hum){
+    if (hum>relaisSwitchOnThreshhold){
+    return true;
+    }
+    return false;
+}
+
+
+
