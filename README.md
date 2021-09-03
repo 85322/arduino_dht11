@@ -17,6 +17,6 @@ Full circuit of Arduino, LCD, Relay and LED that turns on after reaching tempera
 ![4](https://i.postimg.cc/d35qC07q/4-resize.jpg)  
 
 Demo video
-![5](https://youtu.be/kaEaczl9wj8)  
+[![Demo video klick here](https://i.postimg.cc/K8fBqPdf/5-preview-video.jpg)](https://youtu.be/kaEaczl9wj8)  
 
 
