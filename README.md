@@ -16,4 +16,7 @@ Implementing LCD in circuit to display sensor data.
 Full circuit of Arduino, LCD, Relay and LED that turns on after reaching temperature threshold.  
 ![4](https://i.postimg.cc/d35qC07q/4-resize.jpg)  
 
+Demo video
+![5](https://youtu.be/kaEaczl9wj8)  
+
 
