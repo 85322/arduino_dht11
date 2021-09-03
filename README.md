@@ -2,7 +2,7 @@
 
 Made with C++  
 
-Source code file: https://github.com/Anon853/arduino_dht11/blob/master/arduino_dhttest/arduino_dhttest.ino  
+Source code: https://github.com/Anon853/arduino_dht11/blob/master/arduino_dhttest/arduino_dhttest.ino  
 
 First assembly of functional circuit consisting of Arduino, DHT11 sensor and SRD-05VDC-SL-C relay.
 ![1](https://i.postimg.cc/0NW9zFDm/1-resize.jpg)  
