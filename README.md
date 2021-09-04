@@ -1,7 +1,5 @@
 # Arduino embedded system to measure temperature and humidity with relay functionality.
 
-Made with C++  
-
 Source code: https://github.com/Anon853/arduino_dht11/blob/master/arduino_dhttest/arduino_dhttest.ino  
 
 First assembly of functional circuit consisting of Arduino, DHT11 sensor and SRD-05VDC-SL-C relay.
