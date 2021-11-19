@@ -6,13 +6,13 @@ First assembly of functional circuit consisting of Arduino, DHT11 sensor and SRD
 ![1](https://i.postimg.cc/0NW9zFDm/1-resize.jpg)  
 
 Testing LCD screen with Arduino.  
-![2](https://i.postimg.cc/xjbbS3Vg/2-resize.jpg)  
+[![2-resize.jpg](https://i.postimg.cc/nhvNyJL9/2-resize.jpg)](https://postimg.cc/k2gjSLK7)
 
 Implementing LCD in circuit to display sensor data.  
-![3](https://i.postimg.cc/8kMkkyKK/3-resize.jpg)  
+[![3-resize.jpg](https://i.postimg.cc/7P3sPVkj/3-resize.jpg)](https://postimg.cc/SjK7DcjG)
 
 Full circuit of Arduino, LCD, relay and LED that turns on after reaching temperature threshold.  
-![4](https://i.postimg.cc/d35qC07q/4-resize.jpg)  
+[![4-resize.jpg](https://i.postimg.cc/BvPpr5pY/4-resize.jpg)](https://postimg.cc/CZYbDqWk)
 
 Demo video  
 [![Demo video klick here](https://i.postimg.cc/K8fBqPdf/5-preview-video.jpg)](https://youtu.be/kaEaczl9wj8)  
